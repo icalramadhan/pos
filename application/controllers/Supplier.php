@@ -74,11 +74,10 @@ class Supplier extends CI_Controller {
 		// print_r($post);die;
 		
 		if($this->db->affected_rows() > 0) {
-			$this->session->set_flashdata('flash', 'Data berhasil disimpan');
-			// echo "<script>alert('Data berhasil disimpan');</script>";
-		}
+			 $this->session->set_flashdata('flash', 'success');
 			redirect('supplier');
-			// echo "<script>window.location='".site_url('supplier')."';</script>";
+		}
+
 	}
 
 	public function delete($id)

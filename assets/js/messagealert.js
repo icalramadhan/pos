@@ -1,10 +1,12 @@
-const flashdata = $('.flash-data').data('flashdata');
+const flashData = $('.flash-data').data('flashdata');
 
-if(flashdata) {
+if(flashData) {
+    let title = flashData == "success" ? "Success" : "Opps!";
+    let msg = flashData == "success" ? "Data Berhasil di simpan" : "Terjadi Kesalahan Simpan";
     Swal.fire({
-        tittle: 'Succces',
-        text: 'Data berhasil disimpan',
-        type: 'success' 
+        title: title,
+        text: msg,
+        icon: flashData 
     });
 }
 

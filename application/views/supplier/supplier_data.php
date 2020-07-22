@@ -3,6 +3,12 @@
                 <h3>List Data Suppliers <i class="fa fa-truck"></i></h3>
               </div>
 
+<!-- <div class="container"> -->
+    <div class="flash-data" data-flashdata="<?=$this->session->flashdata('flash')?>"></div>
+
+<!-- </div> -->
+
+
 <!-- Main Content  -->
         <div class="x_panel">
             <div class="x_title">
@@ -46,8 +52,9 @@
                         <a href="<?=site_url('supplier/edit/'.$data->id_supplier)?>" class="btn btn-info btn-xs" >
                             <i class="fa fa-pencil"></i> Edit
                         </a>
-                        <a href="<?=site_url('supplier/delete/'.$data->id_supplier)?>" onclick="return confirm('Apakah anda yakin untuk menghapus?')"  class="btn btn-danger btn-xs" >
-                            <i class="fa fa-trash btnhapus"></i> Delete
+                        <!-- <a href="<?=site_url('supplier/delete/'.$data->id_supplier)?>" onclick="return confirm('Apakah anda yakin untuk menghapus?')"  class="btn btn-danger btn-xs" > -->
+                        <a href="<?=site_url('supplier/delete/'.$data->id_supplier)?>" class="btn btn-danger btn-xs btnhapus" >
+                            <i class="fa fa-trash"></i> Delete
                         </a>
                     </td>
                 </tr>
