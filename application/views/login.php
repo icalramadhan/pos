@@ -28,6 +28,8 @@
       <a class="hiddenanchor" id="signup"></a>
       <a class="hiddenanchor" id="signin"></a>
 
+      <div class="flash-datalogin" data-flashdata="<?=$this->session->flashdata('flash')?>"></div>
+
       <div class="login_wrapper">
         <div class="animate form login_form">
           <section class="login_content">
@@ -100,5 +102,11 @@
         </div>
       </div>
     </div>
+    <script src="<?php echo base_url();?>assets/vendors/jquery/dist/jquery.min.js"></script>
+    <!-- SweetAlert2 -->
+    <script src="<?php echo base_url();?>assets/js/sweetalert2.all.min.js"></script>
+    <script src="<?php echo base_url();?>assets/js/sweetalert2.all.js"></script> 
+    <script src="<?php echo base_url();?>assets/js/sweetalert2.js"></script>
+    <script src="<?php echo base_url();?>assets/js/messagealert.js"></script>
   </body>
 </html>

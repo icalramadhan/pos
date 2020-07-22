@@ -132,7 +132,7 @@
               <a data-toggle="tooltip" data-placement="top" title="Lock">
                 <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
               </a>
-              <a data-toggle="tooltip" data-placement="top" title="Logout" href="<?=site_url('auth/logout')?>">
+              <a data-toggle="tooltip" data-placement="top" class="btnlogout" title="Logout" href="<?=site_url('auth/logout')?>">
                 <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
               </a>
             </div>
@@ -158,7 +158,7 @@
                           <span>Settings</span>
                         </a>
                     <a class="dropdown-item"  href="javascript:;">Help</a>
-                      <a class="dropdown-item" onclick="return confirm('Apakah anda yakin untuk Logout?')"  href="<?=site_url('auth/logout')?>"><i class="fa fa-sign-out pull-right" ></i> Log Out</a>
+                      <a class="dropdown-item btnlogout" href="<?=site_url('auth/logout')?>"><i class="fa fa-sign-out pull-right" ></i> Log Out</a>
                     </div>
                   </li>
                 </ul>

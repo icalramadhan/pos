@@ -27,15 +27,11 @@ class Auth extends CI_Controller {
 					'level' => $row->level
 				);
 				$this->session->set_userdata($params);
-				echo "<script>
-					alert('Selamat, Anda berhasil login');
-					window.location='".site_url('dashboard')."';
-				</script>";
+				$this->session->set_flashdata('flash', 'successlogin');
+				redirect('dashboard');
 			} else {
-				echo "<script>
-					alert('Login gagal, username / password salah!');
-					window.location='".site_url('auth/login')."';
-				</script>";
+				$this->session->set_flashdata('flash', 'error');
+				redirect('auth/login');
 			}
 		}
 	}
